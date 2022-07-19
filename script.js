@@ -57,6 +57,11 @@ video.addEventListener("play", () => {
         drawBox.options.boxColor = "#C0392B";
         drawBox.options.drawLabelOptions.backgroundColor = "#C0392B";
       }
+      if (drawBox.options.label.includes("Uzi")) {
+        document.getElementById("alarm").play();
+        drawBox.options.boxColor = "#C0392B";
+        drawBox.options.drawLabelOptions.backgroundColor = "#C0392B";
+      }
       drawBox.draw(canvas);
     });
   }, 100);
@@ -71,6 +76,7 @@ function loadLabeledImages() {
     "Jim Rhodes",
     "Thor",
     "Simon",
+    "Uzi",
     "Beni",
     "John Cena",
     "Tony Stark",
